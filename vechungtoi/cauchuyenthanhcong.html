@@ -1507,40 +1507,6 @@ Chi nhánh Đà Nẵng
 			$(this).parent().nextAll().find("a").removeClass("virtual-active");
 			$(this).parent().prevAll().find("a").addClass("virtual-active");
 		});
-		$(".timeline ul").slick({
-			slidesToShow: 10,
-			slidesToScroll: 3,
-			infinite: false,
-			touchMove: false,
-			prevArrow: `<button class="btn timeline__button">
-					<i class="fa fa-chevron-left"></i>
-					</button>`,
-			nextArrow: ` <button class="btn timeline__button">
-					<i class="fa fa-chevron-right"></i>
-					</button>`,
-			responsive: [
-				{
-					breakpoint: 1024,
-					settings: {
-					slidesToShow: 7,
-					}
-				},
-				{
-					breakpoint: 600,
-					settings: {
-					slidesToShow: 4,
-					}
-				},
-				{
-					breakpoint: 480,
-					settings: {
-					slidesToShow: 3,
-					}
-				}
-			]
-		});
-
-
 		var historySupport = !!(window.history && history.pushState);
 		var page = 1;
 		var totalPage = $('#totalResourceCount').val();
